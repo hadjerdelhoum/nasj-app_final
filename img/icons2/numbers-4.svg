@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96"><defs>
+<linearGradient id="gnumbers" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FBC567"/><stop offset="1" stop-color="#E8862A"/></linearGradient>
+<filter id="s" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.6" flood-color="#a45612" flood-opacity=".45"/></filter></defs>
+<rect x="4" y="8" width="88" height="84" rx="26" fill="#a45612" opacity=".55"/>
+<rect x="4" y="4" width="88" height="84" rx="26" fill="url(#gnumbers)"/>
+<rect x="9" y="9" width="78" height="74" rx="21" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2" stroke-dasharray="4 5" stroke-linecap="round"/>
+<ellipse cx="38" cy="15" rx="26" ry="7" fill="#fff" opacity=".28"/>
+<g filter="url(#s)" transform="translate(0 -2)"><circle cx="22" cy="48" r="9" fill="#fff"/><rect x="36" y="39" width="18" height="18" rx="4" fill="#FFE27A"/><circle cx="68" cy="48" r="9" fill="#fff"/><path d="M14 48 H82" stroke="#fff" stroke-opacity=".5" stroke-width="3" stroke-dasharray="2 5"/></g></svg>

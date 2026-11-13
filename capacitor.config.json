@@ -1,0 +1,14 @@
+{
+	"appId": "app.nasj.learning",
+	"appName": "NASJ",
+	"webDir": "dist",
+	"backgroundColor": "#FBF6EC",
+	"android": {
+		"allowMixedContent": false
+	},
+	"plugins": {
+		"CapacitorHttp": {
+			"enabled": true
+		}
+	}
+}

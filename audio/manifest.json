@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "effects": {
+    "click": "effects/click.wav",
+    "correct": "effects/correct.wav",
+    "try-again": "effects/try-again.wav",
+    "reward": "effects/reward.wav",
+    "weave": "effects/weave.wav",
+    "welcome": "effects/welcome.wav"
+  },
+  "music": {
+    "ambient": "music/ambient.wav"
+  },
+  "speech": {}
+}
