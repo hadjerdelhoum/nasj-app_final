@@ -1,0 +1,16 @@
+NASJ - ouvrir dans Android Studio
+=================================
+1. Dézippez ce dossier.
+2. Android Studio > File > Open > choisissez le dossier "android" (celui qui contient gradlew).
+3. Attendez "Gradle sync" (la première fois, internet est nécessaire pour télécharger Gradle et les outils).
+   Si Android Studio demande d'installer le SDK Android ou de mettre à jour Gradle : acceptez.
+4. Branchez un téléphone (mode développeur + débogage USB) ou créez un émulateur (Device Manager), puis appuyez sur le bouton vert Run.
+5. Pour obtenir l'APK : Build > Build Bundle(s) / APK(s) > Build APK(s).
+   Fichier : android/app/build/outputs/apk/debug/app-debug.apk
+
+Modifier l'application (facultatif, il faut Node.js 20) :
+   dans ce dossier : npm install  ->  modifier src/  ->  npm run build  ->  npx cap sync android
+   puis relancer Run dans Android Studio.
+
+Voix : mettre les mp3 dans public/audio/... et les déclarer dans public/audio/manifest.json (voir public/audio/README.md).
+Sans mp3, l'app utilise la voix de synthèse du téléphone (Réglages > Synthèse vocale > Google : installer Français et Arabe).
