@@ -1,0 +1,106 @@
+/* ==========================================================================
+   NASJ design system — tokens
+   Style: soft "clay" (rounded, chunky, double shadows) — chosen with the ui-ux-pro-max skill for children's
+   education. Palette comes from the official mascot & logo: turquoise jacket, rainbow-yarn hair, coral/pink bow.
+   Contrast (WCAG): every text/background pair below was measured; "on-*" tokens are the safe text colour.
+   ========================================================================== */
+:root {
+  /* brand — taken from the mascot artwork */
+  --teal-100: #ddf5f3;
+  --teal-200: #aee6e1;
+  --teal-300: #7ed6d2;
+  --teal-500: #1fa3a6;
+  --teal-600: #0f7c80;           /* white text 4.98:1 */
+  --teal-800: #0b5560;
+  --pink-500: #f2557d;
+  --pink-600: #c73a66;           /* white text 4.97:1 */
+  --coral-500: #f4736b;
+  --coral-600: #c8394a;
+  --yellow-300: #ffe27a;
+  --yellow-500: #ffcf3a;         /* ink text 8.4:1 */
+  --orange-500: #f49a2e;
+  --orange-700: #c2410c;         /* white text 5.18:1 */
+  --purple-300: #cdb6ef;
+  --purple-500: #9a6fd8;
+  --purple-700: #7b55c4;         /* white text 5.33:1 */
+  --sky-300: #a8e1f5;
+  --sky-500: #5bc8e8;
+  --blue-700: #1e78a8;           /* white text 4.88:1 */
+  --green-500: #4fbf8b;
+  --green-700: #2f7d4f;          /* white text 5.04:1 */
+
+  /* neutrals */
+  --ink: #12384a;                /* body text on cream 11.9:1 */
+  --ink-2: #2f5a6a;
+  --muted: #4f6b76;              /* secondary text on cream 5.4:1 (was 3.65:1) */
+  --cream: #fff9f0;
+  --cream-2: #f7eedd;
+  --paper: #ffffff;
+  --line: rgba(18, 56, 74, 0.12);
+
+  /* semantic */
+  --primary: var(--teal-600);
+  --on-primary: #fff;
+  --accent: var(--pink-600);
+  --success: var(--green-700);
+  --danger: var(--coral-600);
+  --focus: #1b5fd6;              /* focus ring, visible on cream, white and teal */
+
+  /* universes (one identity colour each; text on them is white) */
+  --u-letters: var(--pink-600);
+  --u-numbers: var(--orange-700);
+  --u-forest: var(--green-700);
+  --u-stories: var(--purple-700);
+  --u-inventors: var(--blue-700);
+
+  /* shape */
+  --r-sm: 14px;
+  --r-md: 20px;
+  --r-lg: 28px;
+  --r-xl: 36px;
+  --r-pill: 999px;
+
+  /* clay shadows: outer drop + soft inner light */
+  --clay-1: 0 2px 0 rgba(255, 255, 255, 0.9) inset, 0 -3px 0 rgba(18, 56, 74, 0.06) inset, 0 6px 14px rgba(18, 56, 74, 0.1);
+  --clay-2: 0 3px 0 rgba(255, 255, 255, 0.9) inset, 0 -4px 0 rgba(18, 56, 74, 0.07) inset, 0 14px 30px rgba(18, 56, 74, 0.14);
+  --clay-press: 0 2px 6px rgba(18, 56, 74, 0.12) inset;
+
+  /* spacing (4-pt scale) */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 20px; --s-6: 24px; --s-8: 32px; --s-10: 40px; --s-12: 48px; --s-16: 64px;
+  --gutter: clamp(16px, 4vw, 32px);
+
+  /* touch + motion */
+  --target: 48px;                /* minimum touch size (> 44px guideline) */
+  --dur-fast: 120ms; --dur: 220ms; --dur-slow: 420ms;
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* type — display: rounded Baloo; body: Nunito. Arabic gets its own pair (below) */
+  --font-display: "Baloo 2", "Baloo Bhaijaan 2", "Nunito Variable", system-ui, sans-serif;
+  --font-body: "Nunito Variable", "Noto Sans Arabic Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fs-hero: clamp(2rem, 6vw, 3.25rem);
+  --fs-h1: clamp(1.6rem, 4.6vw, 2.25rem);
+  --fs-h2: clamp(1.3rem, 3.4vw, 1.65rem);
+  --fs-h3: 1.15rem;
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --lh-body: 1.55;
+
+  /* legacy names still used by older screens: aliases, not new values */
+  --teal: var(--teal-600); --teal-d: var(--teal-800); --teal-l: var(--teal-300);
+  --coral: var(--coral-500); --peach: #f9b79a; --lav: var(--purple-500);
+  --yellow: var(--yellow-500); --orange: var(--orange-500); --green: var(--green-500); --blue: var(--sky-500);
+  --radius-lg: var(--r-lg); --radius-md: var(--r-md);
+  --shadow-sm: 0 2px 8px rgba(18, 56, 74, 0.1);
+  --shadow: var(--clay-1);
+  --font: var(--font-body);
+  --hand: var(--font-display);
+  color-scheme: light;
+}
+
+/* Arabic: rounded display face (Baloo Bhaijaan 2) + highly legible Noto Sans Arabic for reading, taller line height */
+html[lang="ar"] {
+  --font-display: "Baloo Bhaijaan 2", "Baloo 2", "Noto Sans Arabic Variable", system-ui, sans-serif;
+  --font-body: "Noto Sans Arabic Variable", "Nunito Variable", system-ui, sans-serif;
+  --lh-body: 1.8;
+}
